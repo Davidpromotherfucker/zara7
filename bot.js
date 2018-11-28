@@ -273,7 +273,7 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
    }
    });
  
- 
+client.on('ready',async () => { client.channels.find(ch => ch.id === "517300350152212486" && ch.type === 'voice')
  
  
 client.login(process.env.BOT_TOKEN);
