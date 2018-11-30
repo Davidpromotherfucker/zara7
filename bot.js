@@ -3,7 +3,7 @@ const client = new Discord.Client();
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity("7help",{type: 'LISTENING'})
+   client.user.setActivity("1help",{type: 'LISTENING'})
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -37,7 +37,7 @@ const queue = new Map();
  
  
  
-var prefix = "2" 
+var prefix = "1" 
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
    
@@ -229,7 +229,7 @@ function play(guild, song) {
     serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
  
-const adminprefix = "2";
+const adminprefix = "1";
 const devs = ['505811134528356352'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -274,7 +274,7 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
    });
  
  
- client.on('ready',async () => { client.channels.find(ch => ch.id === "517300350152212486" && ch.type === 'voice').join(); });
+ client.on('ready',async () => { client.channels.find(ch => ch.id === "517804057998655489" && ch.type === 'voice').join(); });
  
  
  
